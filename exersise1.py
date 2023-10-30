@@ -45,31 +45,52 @@
        alphabet. e.g. "the quick brown fox jumps over the lazy dog" """
 
 
-def panagram(string):
+# def panagram(string):
 
-    stringList=list(string.lower())
-    stringSet=set(stringList)
-    panagramList=[]
-    # stringList_new=list(stringSet)
+#     stringList=list(string.lower())
+#     stringSet=set(stringList)
+#     panagramList=[]
     
-    for i in stringSet:
-        if  i in "abcdefghijklmnopqrstuvwxyz" :
-            panagramList.append(i)
-    print(len(panagramList))
-    # if len(panagramList) == 26: print(True)
-    # else: print(False)
+#     for i in stringSet:
+#         if  i in "abcdefghijklmnopqrstuvwxyz" :
+#             panagramList.append(i)
+    
+#     if len(panagramList) == 26: print(True)
+#     else: print(False)
         
 
         
 
 
-            
+# panagram("the quick brown fox @ jumps over the lazy dog")
+    
+""" Write a function freq that will take a string s as input and
+       return a dictionary. The keys of the dictionary will be the
+       characters in s and the values will the number of times each of
+       the characters occurs in s. Implement this without using the
+       .count method of strings. (ie. s.count()) """
 
+def freq(string):
 
-
-panagram("the quick brown fox @ jumps over the lazy dog")
+    
     
 
+    frequencyDict = {}
+
+    for i in string:
+        if i not in frequencyDict.keys():
+            frequencyDict[i] = 1
+        else :
+            frequencyDict[i] += 1
+    print(frequencyDict)
+
+    
+
+
+
+
+
+freq("fjha gsfs vs##7EB")
 
 
 
