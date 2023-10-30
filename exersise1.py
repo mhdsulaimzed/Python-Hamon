@@ -26,17 +26,54 @@
        to right and right to left. e.g. "dad", "abba"""
   
 
-def palindrome(word):
-    s=word[::-1]
-    if word == s:print(True)
-    else: print(False) 
+# def palindrome(word):
+#     reversedword=word[::-1]
+#     if word == reversedword :print(True)
+#     else: print(False) 
         
 
 
 
-palindrome("malayalam")
-palindrome("nivin")
-palindrome("sita")
+# palindrome("malayalam")
+# palindrome("nivin")
+# palindrome("sita")
+
+
+"""Write a python function called panagram that receives a string s as an
+       argument. It will return True if s is a panagram and False if
+       not. A panagram is a sentence that contains all letters of the
+       alphabet. e.g. "the quick brown fox jumps over the lazy dog" """
+
+
+def panagram(string):
+
+    stringList=list(string.lower())
+    stringSet=set(stringList)
+    panagramList=[]
+    # stringList_new=list(stringSet)
+    
+    for i in stringSet:
+        if  i in "abcdefghijklmnopqrstuvwxyz" :
+            panagramList.append(i)
+    print(len(panagramList))
+    # if len(panagramList) == 26: print(True)
+    # else: print(False)
+        
+
+        
+
+
+            
+
+
+
+panagram("the quick brown fox @ jumps over the lazy dog")
+    
+
+
+
+
+
     
 
 
