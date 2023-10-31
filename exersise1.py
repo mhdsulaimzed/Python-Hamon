@@ -32,9 +32,11 @@ def fizzbizz(n):
 
 
 def palindrome(word):
-    reversedword=word[::-1]
-    if word == reversedword :print(True)
-    else: print(False) 
+    
+    if word == word[::-1]:
+        return True
+    else: 
+        return False 
         
 
 
@@ -48,19 +50,21 @@ def palindrome(word):
        alphabet. e.g. "the quick brown fox jumps over the lazy dog" """
 
 
-def panagram(string):
+def panagram(s):
 
-    stringList=list(string.lower())
-    stringSet=set(stringList)
-    panagramList=[]
+    s_list=[]
     
-    for i in stringSet:
+    for i in s.lower():
         if  i in "abcdefghijklmnopqrstuvwxyz" :
-            panagramList.append(i)
+            s_list.append(i)
     
-    if len(panagramList) == 26: print(True)
-    else: print(False)
-        
+    if len(s_list) == 26:
+        return True
+    else:
+        return False
+    
+
+
 
         
 
@@ -82,6 +86,8 @@ def freq(string):
         else :
             frequencyDict[i] += 1
     print(frequencyDict)
+
+
 
     
 
