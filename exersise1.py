@@ -87,6 +87,13 @@ def freq(string):
             frequencyDict[i] += 1
     print(frequencyDict)
 
+print("safgshjhg")
+
+if __name__ == '__main__':
+    pass
+
+    
+
 
 
     
