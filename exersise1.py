@@ -85,14 +85,14 @@ def freq(string):
             frequencyDict[i] = 1
         else :
             frequencyDict[i] += 1
-    print(frequencyDict)
+    return frequencyDict
 
-print("safgshjhg")
+
+
 
 if __name__ == '__main__':
     pass
 
-    
 
 
 
