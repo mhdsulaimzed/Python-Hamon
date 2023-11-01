@@ -14,3 +14,6 @@ def test_for_sub():
 
 def test_for_multiplication():
     assert evaluate("57*") == 35
+
+def test_for_div():
+    assert evaluate("84/") == 2
