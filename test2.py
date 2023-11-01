@@ -9,4 +9,4 @@ def test_not_palindrome():
     assert not palindrome("dog")
 
 def test_empty_palindrome():
-    assert palindrome("")
+    assert palindrome("")  
