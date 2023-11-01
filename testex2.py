@@ -17,3 +17,6 @@ def test_for_multiplication():
 
 def test_for_div():
     assert evaluate("84/") == 2
+
+def test_for_modulus():
+    assert evaluate("42%")== 0
