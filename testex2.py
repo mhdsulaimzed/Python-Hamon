@@ -20,3 +20,8 @@ def test_for_div():
 
 def test_for_modulus():
     assert evaluate("42%")== 0
+
+def test_for_zerodiv():
+    assert evaluate("30/")== "undefined"
+
+
