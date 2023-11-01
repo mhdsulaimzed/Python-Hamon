@@ -1,6 +1,14 @@
 def evaluate(string):
     stack=[]
     for i in string:
+       
+       
+        if i not in "1234567890-+%*/":
+            
+            stack.append("undefined")
+            break
+
+
         if i in ["+","-","*","/","%"]:
             opr1=stack.pop()
             opr2=stack.pop()
@@ -45,6 +53,7 @@ def evaluate(string):
             stack.append(int(i))
 
     return stack.pop()
+print(evaluate("5h+"))
 
 
 
