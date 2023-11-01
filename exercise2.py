@@ -1,7 +1,23 @@
 def evaluate(string):
     stack=[]
     for i in string:
-        stack.append(int(i))
+        if i in "+":
+            opr1=stack.pop()
+            opr2=stack.pop()
+
+            if i == "+":
+                stack.append(opr1+opr2)
+
+
+
+
+        else:    
+            stack.append(int(i))
+
     return stack.pop()
+
+
+
+
 
 
