@@ -10,3 +10,7 @@ def test_for_add():
 
 def test_for_sub():
     assert evaluate("34-") == -1
+
+
+def test_for_multiplication():
+    assert evaluate("57*") == 35
