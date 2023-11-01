@@ -27,4 +27,7 @@ def test_for_zerodiv():
 def test_for_zerodiv_in_modulo():
     assert evaluate("40%")== "undefined"
 
+def test_for_charecter():
+    assert evaluate("33a") == "undefined"
+
 
